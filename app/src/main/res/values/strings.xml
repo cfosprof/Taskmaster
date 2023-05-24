@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Taskmaster</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="homepage_heading">Homepage Heading</string>
+    <string name="todo">TODO</string>
+    <string name="add_task">Add Task</string>
+    <string name="todos">TODO</string>
+</resources>
