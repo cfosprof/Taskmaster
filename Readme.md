@@ -47,8 +47,11 @@ Screenshots of the application in action will be updated here.
 ![Lab27](screenshots/lab27-3.png)
 
 Added the ability to send data among different activities in the application using SharedPreferences and Intents.
+
 Added a Task Detail page.
+
 Modified the Homepage page to contain three different buttons with hardcoded task titles.
+
 Updated the documentation to reflect the changes made in today's work.
 
 

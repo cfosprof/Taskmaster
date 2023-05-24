@@ -10,8 +10,6 @@ X
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 >
 app/.gitignore,5/1/51e1c5d383dfaa35e0e7e5873a0a99355a86880f
-@
-local.properties,0/7/0712df971a99ac4d2fccb8e0fb19f377f3374cca
 ;
 gradlew.bat,2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3
 7
