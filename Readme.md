@@ -9,7 +9,7 @@ course of development.
 
 1. [Features](#features)
 2. [Getting Started](#getting-started)
-3. [Screenshots](#screenshots)
+3. [Screenshots and Changelog](#screenshots-and-change-log)
 4. [Contributing](#contributing)
 5. [License](#license)
 6. [Change Log](#change-log)
@@ -31,9 +31,30 @@ git clone https://github.com/cfosprof/taskmaster.git
 2. Open the project in Android Studio.
 3. Run the project on an emulator or a real device.
 
-## Change Log And Screenshots
-
+## Screenshots and Change Log
 Screenshots of the application in action will be updated here.
+
+
+### Lab 27
+
+<details markdown="block">
+  <summary>2023-05-23</summary>
+
+![Lab27](screenshots/lab27.png)
+
+![Lab27](screenshots/lab27-2.png)
+
+![Lab27](screenshots/lab27-3.png)
+
+Added the ability to send data among different activities in the application using SharedPreferences and Intents.
+Added a Task Detail page.
+Modified the Homepage page to contain three different buttons with hardcoded task titles.
+Updated the documentation to reflect the changes made in today's work.
+
+
+</details>
+
+### Lab 26
 
 <details markdown="block">
   <summary>2023-05-22</summary>  <img src="screenshots/home.png" alt="Home Screen" width="300">### Lab 26
@@ -57,23 +78,63 @@ Screenshots of the application in action will be updated here.
 
 - Wrote unit tests for the custom helper methods.
 
-
-
-
-
 </details>
 
-
-
-## Lab 26
-
-<details markdown="block">
-  <summary>2023-05-22</summary>  <img src="screenshots/home.png" alt="Home Screen" width="300">
 
 
 
 ## Task list
 
+### Lab 27
+
+[x] Create a new activity for the "Settings" page.
+[x] Add a SharedPreferences object and store the user's username in it.
+[x] In the onCreate() method of the MainActivity, retrieve and display the user's username in a TextView.
+[x] When the user taps on one of the task buttons in the MainActivity, create an Intent to start the Settings activity.
+[x] When the user taps on the "Save" button, save the user's username to SharedPreferences.
+
+Create a Task Detail page.
+
+[ ] Create a new layout file for the Task Detail page.
+
+[ ] In the layout file, add a TextView to display the task title.
+
+[ ] In the layout file, add a TextView to display the task body.
+
+[ ] Create a new activity for the Task Detail page.
+
+[ ] In the activity's Java file, override the onCreate() method and inflate the layout file for the Task Detail page.
+
+[ ] In the activity's Java file, get the task title and task body from Intent extras.
+
+[ ] Set the task title and task body in the TextViews in the layout file.
+
+Modify the Homepage page to contain three different buttons with hardcoded task titles.
+
+
+[ ] In the layout file for the Homepage page, add three Buttons.
+
+[ ] Set the text of the buttons to "Task 1", "Task 2", and "Task 3".
+
+[ ] In the activity's Java file, override the onCreate() method and add a click listener to each of the buttons.
+
+[ ] In the click listener for each button, create an Intent to start the Task Detail activity.
+
+[ ] In the click listener for each button, pass the task title of the button as an Intent extra.
+
+Update the documentation.
+
+[ ] Update the homepage screenshot in the documentation to reflect the changes made in today's work.
+
+[ ] Update the daily change log in the documentation to reflect the changes made in today's work.
+
+
+
+<details markdown="block">
+  <summary>2023-05-22</summary>  <img src="screenshots/home.png" alt="Home Screen" width="300">
+
+
+## Lab 26
 1. Build the Homepage
    - [x] Add a TextView to the top of the page and set its text to serve  
          as the heading of the homepage.

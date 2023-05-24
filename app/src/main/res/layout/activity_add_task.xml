@@ -15,6 +15,7 @@
         android:background="#80000000">
 
         <EditText
+            android:id="@+id/task_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Task Title"
@@ -22,12 +23,14 @@
             android:textColor="@color/black" />
 
         <EditText
+            android:id="@+id/task_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Task Body"
             android:minHeight="48dp"
             android:backgroundTint="@color/white"
             android:textColor="@color/black" />
+
 
         <Button
             android:id="@+id/submit_button"
