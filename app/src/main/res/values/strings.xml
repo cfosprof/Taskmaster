@@ -12,5 +12,7 @@
     <string name="taskbody">taskBody</string>
     <string name="task_1">wefwe</string>
     <string name="settings">okay settings</string>
+    <string name="taskstate">Active</string>
+    <string name="task_title">Task Title</string>
 
 </resources>

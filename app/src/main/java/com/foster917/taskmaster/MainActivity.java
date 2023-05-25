@@ -1,16 +1,24 @@
 package com.foster917.taskmaster;
 
-import static android.preference.PreferenceManager.getDefaultSharedPreferences;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private RecyclerView taskRecyclerView;
+    private TaskAdapter taskAdapter;
+    private List<Task> taskList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,42 +37,29 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button task1Button = findViewById(R.id.task1_button);
-        task1Button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TaskDetailActivity.class);
-            intent.putExtra(getString(R.string.tasktitle), "Task 1 Title");
-            intent.putExtra(getString(R.string.taskbody), "Task 1 Body");
-            startActivity(intent);
-        });
-
-        Button task2Button = findViewById(R.id.task2_button);
-        task2Button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TaskDetailActivity.class);
-            intent.putExtra(getString(R.string.tasktitle), "Task 2 Title");
-            intent.putExtra(getString(R.string.taskbody), "Task 2 Body");
-            startActivity(intent);
-        });
-
-        Button task3Button = findViewById(R.id.task3_button);
-        task3Button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TaskDetailActivity.class);
-            intent.putExtra(getString(R.string.tasktitle), "Task 3 Title");
-            intent.putExtra(getString(R.string.taskbody), "Task 3 Body");
-            startActivity(intent);
-        });
-
         Button settingsButton = findViewById(R.id.settings_button);
         settingsButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
         });
+
+        taskRecyclerView = findViewById(R.id.task_recycler_view);
+
+        taskList = new ArrayList<>();
+        taskList.add(new Task("Task 1 Title", "Task 1 Body", "new"));
+        taskList.add(new Task("Task 2 Title", "Task 2 Body", "in progress"));
+        taskList.add(new Task("Task 3 Title", "Task 3 Body", "completed"));
+
+        taskAdapter = new TaskAdapter(this, taskList);
+        taskRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        taskRecyclerView.setAdapter(taskAdapter);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        SharedPreferences sharedPreferences = getDefaultSharedPreferences(this);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         String username = sharedPreferences.getString("username", "Foster917");
 
         TextView usernameTextView = findViewById(R.id.username_text_view);
