@@ -25,7 +25,7 @@ course of development.
 1. Clone the repository
 
 ```zsh
-git clone https://github.com/cfosprof/taskmaster.git  
+git clone https://github.com/cfosprof/taskmaster.git
 ```
 
 2. Open the project in Android Studio.
@@ -34,11 +34,15 @@ git clone https://github.com/cfosprof/taskmaster.git
 ## Screenshots and Change Log
 Screenshots of the application in action will be updated here.
 
+### Lab28
 
-### Lab 27
+
+
 
 <details markdown="block">
   <summary>2023-05-23</summary>
+
+### Lab 27
 
 ![Lab27](screenshots/lab27.png)
 
@@ -57,10 +61,11 @@ Updated the documentation to reflect the changes made in today's work.
 
 </details>
 
-### Lab 26
 
 <details markdown="block">
   <summary>2023-05-22</summary>  <img src="screenshots/home.png" alt="Home Screen" width="300">### Lab 26
+
+### Lab 26
 
 ![Lab26](screenshots/lab26.png)
 
@@ -88,6 +93,11 @@ Updated the documentation to reflect the changes made in today's work.
 
 ## Task list
 
+### Lab 28
+
+<details markdown="block">
+  <summary>2023-05-23</summary>  <img src="screenshots/home.png" alt="Home Screen" width="300">
+  
 ### Lab 27
 
 [x] Create a new activity for the "Settings" page.
@@ -131,7 +141,7 @@ Update the documentation.
 
 [ ] Update the daily change log in the documentation to reflect the changes made in today's work.
 
-
+</details>
 
 <details markdown="block">
   <summary>2023-05-22</summary>  <img src="screenshots/home.png" alt="Home Screen" width="300">
