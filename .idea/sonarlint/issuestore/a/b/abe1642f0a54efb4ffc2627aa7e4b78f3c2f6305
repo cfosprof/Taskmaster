@@ -1,0 +1,11 @@
+
+p
+java:S1450"ZRemove the "taskAdapter" field and declare it as a local variable in the relevant methods.(à†ô¾
+r
+java:S1450"WRemove the "taskList" field and declare it as a local variable in the relevant methods.(ì‰î…ùÿÿÿÿ
+z
+java:S1450"_Remove the "taskRecyclerView" field and declare it as a local variable in the relevant methods.(ó˜÷™üÿÿÿÿ
+T
+java:S1874>"9Remove this use of "PreferenceManager"; it is deprecated.(ğíÕ€úÿÿÿÿ
+^
+java:S1874>"CRemove this use of "getDefaultSharedPreferences"; it is deprecated.(ğíÕ€úÿÿÿÿ
